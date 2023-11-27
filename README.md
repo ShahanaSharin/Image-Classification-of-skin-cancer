@@ -2,6 +2,7 @@
 To design automated diagnostics of dermatoscopic images of pigmented skin lesions into various cancer and non-cancerous categories.
 
 Data Source
+
 The International Skin Imaging Collaboration (ISIC) is an international effort to improve melanoma diagnosis, sponsored by the International Society for Digital Imaging of the Skin (ISDIS). The ISIC hosted a challenge in 2018 at the Medical Image Computing and Computer Assisted Intervention (MICCAI) conference in Granada, Spain. Skin cancer is one of the most common forms of cancer, as reported by the American Cancer Society. While skin cancer is amenable to early detection by direct inspection, visual similarity with benign lesions makes the task difficult. The goal of the challenge was to develop methods for segmentation, clinical attribute detection, and disease classification in dermatoscopic images. https://challenge2018.isic-archive.com/
 
 The data set is now available on “Harvard Dataverse” which is a free data repository open to all researchers from any discipline, both inside and outside of the Harvard community, where you can share, archive, cite, access, and explore research data. https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
@@ -9,6 +10,7 @@ The data set is now available on “Harvard Dataverse” which is a free data re
 Alternatively the data is also available on Kaggle. Kaggle is a subsidiary of Google LLC and is an online community of data scientists and machine learning practitioners. It allows users to find and publish data sets, explore and build models in a web-based data-science environment, work with other data scientists and machine learning engineers, and enter competitions to solve data science challenges. https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
 
 Data Description
+
 HAM10000 ("Human Against Machine with 10000 training images") dataset is a large collection of multi-source dermatoscopic images of common pigmented skin lesions from different populations, acquired and stored by different modalities. The dataset includes lesions with multiple images, which can be tracked by the lesion_id-column within the HAM10000_metadata file. The final dataset consists of 10015 dermatoscopic images and serve as a training set for academic machine learning purposes. It consists of 7 columns and 10015 rows. The columns are as listed below exactly how they are present in the dataset:
 
 lesion_id: - The unique id of a skin lesion for a patient.
@@ -27,6 +29,7 @@ Results and Comparison
 Table: Comparison of Classifiers
 
 CLASSIFIER	ACCURACY	TRAINING TIME
+
 K-Nearest Neighbour(KNN)	Manhattan Distance 67.3% Euclidean Distance 68.42%	40 minutes
 Support Vector Machine (SVM)	Polynomial Kernel 73.18% Radial Basis Function Kernel 72.51%	30 minutes
 Artificial Neural Network (ANN)	Single Hidden Layer 72.3% Hidden Layer 71.7% Hidden Layer 71.48%	20 minutes (using 12 GB NVIDIA Tesla K80 GPU)
