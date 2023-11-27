@@ -28,7 +28,6 @@ HAM10000 ("Human Against Machine with 10000 training images") dataset is a large
   Table: Comparison of Classifiers
 
 | CLASSIFIER	                    | ACCURACY	                                                      |TRAINING TIME                                  |
-|-------------------------------- |---------- ----------------------------------------------------  |-----------------------------------------------|
 |K-Nearest Neighbour(KNN)         |Manhattan Distance 67.3% Euclidean Distance 68.42%               |	40 minutes                                    |
 |Support Vector Machine (SVM)     |	Polynomial Kernel 73.18% Radial Basis Function Kernel           | 72.51%	30 minutes                            |
 |Artificial Neural Network (ANN)  |	Single Hidden Layer 72.3% Hidden Layer 71.7% Hidden Layer 71.48%|	20 minutes (using 12 GB NVIDIA Tesla K80 GPU) |
